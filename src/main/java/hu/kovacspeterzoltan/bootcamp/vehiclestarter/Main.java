@@ -8,9 +8,9 @@ import hu.kovacspeterzoltan.bootcamp.vehicleregister.dao.VehicleRegisterStorageI
 
 public class Main {
     public static void main(String[] args) {
-        VehicleRegisterStorageInterface persistenceStorageCSV = new PersistenceStorageCSV();
-
         RegisterInteractor registerInteractor = new RegisterInteractor();
+
+        VehicleRegisterStorageInterface persistenceStorageCSV = new PersistenceStorageCSV();
         registerInteractor.setStorageImp(persistenceStorageCSV);
 
         ConsoleUIRegisterPresenterImp consoleUIRegisterPresenter = new ConsoleUIRegisterPresenterImp();
