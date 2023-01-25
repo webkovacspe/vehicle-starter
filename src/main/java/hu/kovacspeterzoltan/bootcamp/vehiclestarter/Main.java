@@ -18,7 +18,8 @@ public class Main {
         vehicleInteractor.setPresenterImp(consoleUIRegisterPresenter);
 
         ConsoleUIController consoleUI = new ConsoleUIController();
-        consoleUI.setRegisterInteractorImp(vehicleInteractor);
+        consoleUI.setSaveVehicleInteractorImp(vehicleInteractor);
+        consoleUI.setFindInteractorImp(vehicleInteractor);
 
         consoleUI.start();
     }
